@@ -10,7 +10,7 @@
 <body>
   <div id="root">
     <header>
-      <nav class="flex justify-between items-center px-6 py-4 relative">
+      <nav class="flex justify-between items-center px-6 py-4 relative ">
         <div id="logo"><img class="h-7 rounded-lg" src="../assets/img/xiaomi-logo.jpg" alt=""></div>
 
         <div id="side-bar-nav-wrapper" class="flex md:order-2">
@@ -21,21 +21,21 @@
             <li id="" class=""> <span class="material-symbols-outlined">
               shopping_cart
               </span> </li>
-            <li><span class="material-symbols-outlined">
+            <li class="md:hidden"><span class="material-symbols-outlined">
               menu
               </span></li>
             
             </ul>
           </div>
 
-          <div class="bg-white absolute top-0 left-0 right-0 px-2">
+          <div class=" absolute top-0 left-0 right-0 px-2 md:static">
             <section class="divide-y divide-gray-200 px-4" >
               <header class="flex justify-between items-center py-4 flex-row-reverse">
-                <div class="flex bg-white">
+                <a href="#" class="bg-green-500 flex justify-center items-center">
                   <span class="material-symbols-outlined">
                     close
                     </span>
-                </div>
+                  </a>
               </header>
 
               <content class=" divide-y divide-gray-200">
@@ -50,32 +50,43 @@
                 
                 <ul class=" py-2">
                   <li>
-                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P>Store</P><span class="material-symbols-outlined text-black">
+                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">Store</P><span class="material-symbols-outlined text-black">
                       chevron_right
                       </span></a>
                   </li>
                   <li>
-                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P>Smartphone</P><span class="material-symbols-outlined">
+                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">Smartphone</P><span class="material-symbols-outlined">
+                      add
+                      </span></a>
+
+                      <div  class="bg-gray-100 w-full my-2 p-2 divide-y divide-gray-300 rounded-lg" >
+                        <ul class="grid grid-cols-4">
+                          <li class=""><a href="#" class=" flex justify-center items-center py-6"><p>Redmi</p></a></li>
+                          <li><a href="#" class=" flex justify-center items-center py-6"><p>POCO</p></a></li>
+                          <li><a href="#" class=" flex justify-center items-center py-6"><p>Xiaomi</p></a></li>
+                        </ul>
+                        <div class="flex justify-center items-center"><a href="#" class="flex py-2"><p>Semua Produk</p><span class="material-symbols-outlined">
+                          chevron_right
+                          </span></a></div>
+                      </div>
+                  </li>
+                  <li>
+                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">Smart Home</P><span class="material-symbols-outlined">
                       add
                       </span></a>
                   </li>
                   <li>
-                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P>Smart Home</P><span class="material-symbols-outlined">
+                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">LifeStyle</P><span class="material-symbols-outlined">
                       add
                       </span></a>
                   </li>
                   <li>
-                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P>LifeStyle</P><span class="material-symbols-outlined">
-                      add
-                      </span></a>
-                  </li>
-                  <li>
-                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P>Discover</P><span class="material-symbols-outlined text-black">
+                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">Discover</P><span class="material-symbols-outlined text-black">
                       chevron_right
                       </span></a>
                   </li>
                   <li>
-                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P>Support</P><span class="material-symbols-outlined text-black">
+                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">Support</P><span class="material-symbols-outlined text-black">
                       chevron_right
                       </span></a>
                   </li>
@@ -83,16 +94,16 @@
               </content>
 
               <footer>
-                <ul>
-                  <li><p>produk</p><span class="material-symbols-outlined">
+                <ul class=" py-2">
+                  <li><a class="flex justify-between items-center py-2 focus:text-orange-500" href="#"><p class="text-xs">PRODUK</p><span class="material-symbols-outlined">
                     add
-                    </span</li>
-                  <li><p>dukungan</p><span class="material-symbols-outlined">
+                    </span></a></li>
+                  <li><a class="flex justify-between items-center py-2 focus:text-orange-500" href="#" href="#"><p class="text-xs">DUKUNGAN</p><span class="material-symbols-outlined">
                     add
-                    </span</li>
-                  <li><p>tentang</p><span class="material-symbols-outlined">
+                    </span></a></li>
+                  <li><a class="flex justify-between items-center py-2 focus:text-orange-500" href="#" href="#"><p class="text-xs">TENTANG</p><span class="material-symbols-outlined">
                     add
-                    </span</li>
+                    </span></a></li>
                 </ul>
               </footer>
             </section>
