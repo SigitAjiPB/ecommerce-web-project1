@@ -10,10 +10,10 @@
 <body>
   <div id="root">
     <header>
-      <nav class="flex justify-between items-center px-6 py-4 relative ">
+      <nav class="flex gap-4 justify-between items-center px-6 py-4 relative bg-slate-200 lg:justify-normal lg:py-1">
         <div id="logo"><img class="h-7 rounded-lg" src="../assets/img/xiaomi-logo.jpg" alt=""></div>
 
-        <div id="side-bar-nav-wrapper" class="flex md:order-2">
+        <div id="side-bar-nav-wrapper" class="flex lg:order-2">
           <ul class="flex justify-between items-center gap-6">
             <li id="search-"><span class="material-symbols-outlined">
               search
@@ -21,25 +21,30 @@
             <li id="" class=""> <span class="material-symbols-outlined">
               shopping_cart
               </span> </li>
-            <li class="md:hidden"><span class="material-symbols-outlined">
+            <li class="lg:hidden"><span class="material-symbols-outlined">
               menu
+              </span></li>
+            <li class=""><span class="material-symbols-outlined">
+              person
               </span></li>
             
             </ul>
           </div>
 
-          <div class=" absolute top-0 left-0 right-0 px-2 md:static">
-            <section class="divide-y divide-gray-200 px-4" >
-              <header class="flex justify-between items-center py-4 flex-row-reverse">
-                <a href="#" class="bg-green-500 flex justify-center items-center">
+          <div class=" absolute top-0 left-0 right-0 px-2 bg-white lg:static lg:p-0">
+            <section class="divide-y divide-gray-200 px-4 lg:grid lg:px-0" >
+<!-- ===== Close sidebar Button ===== -->
+              <header class="flex justify-between items-center py-4 flex-row-reverse lg:hidden">
+                <a href="#" class="flex justify-center items-center">
                   <span class="material-symbols-outlined">
                     close
                     </span>
                   </a>
               </header>
-
-              <content class=" divide-y divide-gray-200">
-                <a href="#" class="flex justify-between items-center mt-2 mb-6 ">
+<!-- ===== Content sidebar & nav bar menu ===== -->
+              <content class=" divide-y divide-gray-200 bg-green-500 lg:divide-none">
+<!-- ===== Login Button ===== -->
+                <a href="#" class="flex justify-between items-center mt-2 mb-6 lg:hidden">
                   <div class="flex gap-2 items-center" ><span class="material-symbols-outlined bg-slate-300 p-1 rounded-md text-white">
                     person
                     </span><p >Login / Daftar</p></div>
@@ -47,19 +52,20 @@
                     chevron_right
                     </span>
                 </a>
-                
-                <ul class=" py-2">
+<!-- ===== Store Nav ===== -->
+                <ul class=" py-2 lg:grid lg:grid-cols-6 lg:py-0 bg-red-200">
                   <li>
-                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">Store</P><span class="material-symbols-outlined text-black">
+                    <a href="#" class="flex justify-between items-center py-2 bg-yellow-500 focus:text-orange-500 lg:justify-center"><P class="font-bold">Store</P><span class="material-symbols-outlined text-black lg:hidden">
                       chevron_right
                       </span></a>
                   </li>
+<!-- ===== Smartphone Nav ===== -->
                   <li>
-                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">Smartphone</P><span class="material-symbols-outlined">
+                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500 "><P class="font-bold">Smartphone</P><span class="material-symbols-outlined lg:hidden">
                       add
                       </span></a>
-
-                      <div  class="bg-gray-100 w-full my-2 py-2 px-6 divide-y divide-gray-300 rounded-lg" >
+<!-- ======= Dropdown Smartphone ========= -->
+                      <div  class="bg-gray-100 w-full my-2 py-2 px-6 divide-y hidden divide-gray-300 rounded-lg" >
                         <ul class="grid grid-cols-4">
                           <li class=""><a href="#" class=" flex justify-center items-center py-6"><p>Redmi</p></a></li>
                           <li><a href="#" class=" flex justify-center items-center py-6"><p>POCO</p></a></li>
@@ -70,12 +76,13 @@
                           </span></a></div>
                       </div>
                   </li>
+<!-- ===== Smart Home Nav ===== -->
                   <li>
-                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">Smart Home</P><span class="material-symbols-outlined">
+                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">Smart Home</P><span class="material-symbols-outlined lg:hidden">
                       add
                       </span></a>
-
-                      <div class="bg-gray-100 w-full my-2 py-2 px-6 divide-y divide-gray-300 rounded-lg">
+<!-- ======= Dropdown SmartHome ===== -->
+                      <div class="bg-gray-100 w-full my-2 py-2 px-6 divide-y hidden divide-gray-300 rounded-lg">
                         <ul class="grid grid-cols-3">
                           <li><a href="#" class="flex flex-col gap-2 py-4 justify-center items-center"><span class="material-symbols-outlined rotate-90">
                             tablet_mac
@@ -108,13 +115,14 @@
                           </span></a></div>
                       </div>
                   </li>
+<!-- ===== Lifestyle Nav ===== -->
                   <li>
-                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">LifeStyle</P><span class="material-symbols-outlined">
+                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">LifeStyle</P><span class="material-symbols-outlined lg:hidden">
                       add
                       </span></a>
-
-                      <div class="bg-gray-100 w-full my-2 py-2 px-6 divide-y divide-gray-300 rounded-lg">
-                        <ul class="grid grid-cols-3">
+<!-- ===== dropdown lifestyle ====== -->
+                      <div class="bg-gray-100 w-full my-2 py-2 px-6 divide-y hidden divide-gray-300 rounded-lg">
+                        <ul class="">
                           <li>
                             <a href="#" class="flex flex-col justify-center items-center py-4">
                               <span class="material-symbols-outlined">
@@ -145,20 +153,22 @@
                           </span></a></div>
                       </div>
                   </li>
+<!-- ===== Discover Nav ===== -->
                   <li>
-                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">Discover</P><span class="material-symbols-outlined text-black">
+                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">Discover</P><span class="material-symbols-outlined text-black lg:hidden">
                       chevron_right
                       </span></a>
                   </li>
+<!-- ===== Support Nav ===== -->
                   <li>
-                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">Support</P><span class="material-symbols-outlined text-black">
+                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">Support</P><span class="material-symbols-outlined text-black lg:hidden">
                       chevron_right
                       </span></a>
                   </li>
                 </ul>
               </content>
-
-              <footer>
+<!-- ===== Footer ===== -->
+              <footer class="lg:hidden">
                 <ul class=" py-2">
                   <li><a class="flex justify-between items-center py-2 focus:text-orange-500" href="#"><p class="text-xs">PRODUK</p><span class="material-symbols-outlined">
                     add
