@@ -10,8 +10,8 @@
 <body>
   <div id="root">
     <header class="">
-      <nav class="flex gap-4 justify-between items-center px-6 py-4 relative bg-slate-200 lg:py-0 lg:px-0 lg:justify-evenly">
-        <div id="logo"><img class="h-7 rounded-lg" src="../assets/img/xiaomi-logo.jpg" alt=""></div>
+      <nav class="flex gap-4 justify-between items-center px-6 py-4 relative  lg:py-2  lg:px-8 lg:justify-normal xl:w-[80%] xl:m-auto">
+        <div id="logo"><img class="h-7 min-w-min rounded-lg" src="../assets/img/xiaomi-logo.jpg" alt=""></div>
 
         <div id="side-bar-nav-wrapper" class="flex lg:order-3">
           <ul class="flex justify-between items-center gap-6">
@@ -31,8 +31,8 @@
             </ul>
           </div>
 
-          <div class=" absolute top-0 left-0 right-0 px-2 bg-white lg:static lg:px-0">
-            <section class="divide-y divide-gray-200 px-4 lg:grid lg:px-0" >
+          <div class=" absolute top-0 left-0 right-0 px-2 bg-white lg:static lg:px-0 w-full">
+            <section class="divide-y divide-gray-200 px-4 lg:grid lg:px-0 lg:divide-none" >
 <!-- ===== Close sidebar Button ===== -->
               <header class="flex justify-between items-center py-4 flex-row-reverse lg:hidden">
                 <a href="#" class="flex justify-center items-center">
@@ -42,7 +42,7 @@
                   </a>
               </header>
 <!-- ===== Content sidebar & nav bar menu ===== -->
-              <content class=" divide-y divide-gray-200 bg-green-500 lg:divide-none">
+              <content class=" divide-y divide-gray-200 lg:divide-none">
 <!-- ===== Login Button ===== -->
                 <a href="#" class="flex justify-between items-center mt-2 mb-6 lg:hidden">
                   <div class="flex gap-2 items-center" ><span class="material-symbols-outlined bg-slate-300 p-1 rounded-md text-white">
@@ -53,15 +53,15 @@
                     </span>
                 </a>
 <!-- ===== Store Nav ===== -->
-                <ul class=" py-2 lg:grid lg:grid-cols-8 lg:space-x-0 lg:py-0 bg-red-200 ">
+                <ul class=" py-2 lg:grid lg:grid-cols-8 lg:py-0">
                   <li> 
-                    <a href="#" class="flex justify-between items-center py-2 bg-yellow-500 focus:text-orange-500 lg:justify-center"><P class="font-bold">Store</P><span class="material-symbols-outlined text-black lg:hidden">
+                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500 lg:justify-center"><P class="font-bold">Store</P><span class="material-symbols-outlined text-black lg:hidden">
                       chevron_right
                       </span></a>
                   </li>
 <!-- ===== Smartphone Nav ===== -->
                   <li>
-                    <a href="#" class="flex justify-between items-center py-2  focus:text-orange-500 bg-green-500 lg:justify-center"><P class="font-bold">Smartphone</P><span class="material-symbols-outlined lg:hidden">
+                    <a href="#" class="flex justify-between items-center py-2  focus:text-orange-500  lg:justify-center"><P class="font-bold">Smartphone</P><span class="material-symbols-outlined lg:hidden">
                       add
                       </span></a>
 <!-- ======= Dropdown Smartphone ========= -->
@@ -155,7 +155,7 @@
                   </li>
 <!-- ===== Discover Nav ===== -->
                   <li class="col-start-7">
-                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">Discover</P><span class="material-symbols-outlined text-black lg:hidden">
+                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500 lg:justify-center"><P class="font-bold">Discover</P><span class="material-symbols-outlined text-black lg:hidden">
                       chevron_right
                       </span></a>
                   </li>
