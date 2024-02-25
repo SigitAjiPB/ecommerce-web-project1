@@ -9,11 +9,11 @@
 </head>
 <body>
   <div id="root">
-    <header>
-      <nav class="flex gap-4 justify-between items-center px-6 py-4 relative bg-slate-200 lg:justify-normal lg:py-1">
+    <header class="">
+      <nav class="flex gap-4 justify-between items-center px-6 py-4 relative bg-slate-200 lg:py-0 lg:px-0 lg:justify-evenly">
         <div id="logo"><img class="h-7 rounded-lg" src="../assets/img/xiaomi-logo.jpg" alt=""></div>
 
-        <div id="side-bar-nav-wrapper" class="flex lg:order-2">
+        <div id="side-bar-nav-wrapper" class="flex lg:order-3">
           <ul class="flex justify-between items-center gap-6">
             <li id="search-"><span class="material-symbols-outlined">
               search
@@ -31,7 +31,7 @@
             </ul>
           </div>
 
-          <div class=" absolute top-0 left-0 right-0 px-2 bg-white lg:static lg:p-0">
+          <div class=" absolute top-0 left-0 right-0 px-2 bg-white lg:static lg:px-0">
             <section class="divide-y divide-gray-200 px-4 lg:grid lg:px-0" >
 <!-- ===== Close sidebar Button ===== -->
               <header class="flex justify-between items-center py-4 flex-row-reverse lg:hidden">
@@ -53,15 +53,15 @@
                     </span>
                 </a>
 <!-- ===== Store Nav ===== -->
-                <ul class=" py-2 lg:grid lg:grid-cols-6 lg:py-0 bg-red-200">
-                  <li>
+                <ul class=" py-2 lg:grid lg:grid-cols-8 lg:space-x-0 lg:py-0 bg-red-200 ">
+                  <li> 
                     <a href="#" class="flex justify-between items-center py-2 bg-yellow-500 focus:text-orange-500 lg:justify-center"><P class="font-bold">Store</P><span class="material-symbols-outlined text-black lg:hidden">
                       chevron_right
                       </span></a>
                   </li>
 <!-- ===== Smartphone Nav ===== -->
                   <li>
-                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500 "><P class="font-bold">Smartphone</P><span class="material-symbols-outlined lg:hidden">
+                    <a href="#" class="flex justify-between items-center py-2  focus:text-orange-500 bg-green-500 lg:justify-center"><P class="font-bold">Smartphone</P><span class="material-symbols-outlined lg:hidden">
                       add
                       </span></a>
 <!-- ======= Dropdown Smartphone ========= -->
@@ -78,7 +78,7 @@
                   </li>
 <!-- ===== Smart Home Nav ===== -->
                   <li>
-                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">Smart Home</P><span class="material-symbols-outlined lg:hidden">
+                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500 lg:justify-center"><P class="font-bold">Smart Home</P><span class="material-symbols-outlined lg:hidden">
                       add
                       </span></a>
 <!-- ======= Dropdown SmartHome ===== -->
@@ -117,7 +117,7 @@
                   </li>
 <!-- ===== Lifestyle Nav ===== -->
                   <li>
-                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">LifeStyle</P><span class="material-symbols-outlined lg:hidden">
+                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500 lg:justify-center"><P class="font-bold">LifeStyle</P><span class="material-symbols-outlined lg:hidden">
                       add
                       </span></a>
 <!-- ===== dropdown lifestyle ====== -->
@@ -154,14 +154,14 @@
                       </div>
                   </li>
 <!-- ===== Discover Nav ===== -->
-                  <li>
+                  <li class="col-start-7">
                     <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">Discover</P><span class="material-symbols-outlined text-black lg:hidden">
                       chevron_right
                       </span></a>
                   </li>
 <!-- ===== Support Nav ===== -->
                   <li>
-                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500"><P class="font-bold">Support</P><span class="material-symbols-outlined text-black lg:hidden">
+                    <a href="#" class="flex justify-between items-center py-2 focus:text-orange-500 lg:justify-center"><P class="font-bold">Support</P><span class="material-symbols-outlined text-black lg:hidden">
                       chevron_right
                       </span></a>
                   </li>
