@@ -22,9 +22,9 @@
             <li id="" class=""> <span class="material-symbols-outlined">
               shopping_cart
               </span> </li>
-            <li class="lg:hidden"><span class="material-symbols-outlined">
+            <li id="hamburger-menu-js" class="lg:hidden cursor-pointer"><a href="#"><span class="material-symbols-outlined">
               menu
-              </span></li>
+              </span></a></li>
             <li class="hidden lg:block"><span class="material-symbols-outlined">
               person
               </span></li>
@@ -32,11 +32,12 @@
             </ul>
           </div>
 
-          <div class="hidden absolute top-0 left-0 right-0 px-2 bg-white lg:static lg:px-0 w-full lg:block">
+          <div id="header-side-nav" class="hidden absolute top-0 left-0 right-0 px-2 bg-white lg:static lg:px-0 w-full lg:block">
             <section class="divide-y divide-gray-200 px-4 lg:grid lg:px-0 lg:divide-none" >
-<!-- ===== Close sidebar Button ===== -->
+              <!-- === sidebar === -->
               <header class="flex justify-between items-center py-4 flex-row-reverse lg:hidden">
-                <a href="#" class="flex justify-center items-center">
+                <!-- ===== Close sidebar Button ===== -->
+                <a id="side-bar-close-btn" href="#" class="flex justify-center items-center">
                   <span class="material-symbols-outlined">
                     close
                     </span>
