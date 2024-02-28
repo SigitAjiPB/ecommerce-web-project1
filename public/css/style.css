@@ -698,17 +698,23 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-gray-300 {
+.bg-green-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
+.bg-red-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+}
+
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
 .p-1 {
   padding: 0.25rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .px-2 {
@@ -741,24 +747,9 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
-.px-\[100rem\] {
-  padding-left: 100rem;
-  padding-right: 100rem;
-}
-
-.px-\[50rem\] {
-  padding-left: 50rem;
-  padding-right: 50rem;
-}
-
-.px-\[25rem\] {
-  padding-left: 25rem;
-  padding-right: 25rem;
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .text-xs {
@@ -794,10 +785,6 @@ video {
     position: absolute;
   }
 
-  .lg\:relative {
-    position: relative;
-  }
-
   .lg\:left-0 {
     left: 0px;
   }
@@ -810,6 +797,10 @@ video {
     display: block;
   }
 
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:grid {
     display: grid;
   }
@@ -818,20 +809,24 @@ video {
     display: none;
   }
 
-  .lg\:h-20 {
-    height: 5rem;
+  .lg\:w-\[65\%\] {
+    width: 65%;
   }
 
   .lg\:w-full {
     width: 100%;
   }
 
-  .lg\:grid-cols-8 {
-    grid-template-columns: repeat(8, minmax(0, 1fr));
+  .lg\:w-\[55\%\] {
+    width: 55%;
   }
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 
   .lg\:justify-normal {
@@ -848,22 +843,8 @@ video {
     border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
-  .lg\:divide-x-4 > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-x-reverse: 0;
-    border-right-width: calc(4px * var(--tw-divide-x-reverse));
-    border-left-width: calc(4px * calc(1 - var(--tw-divide-x-reverse)));
-  }
-
   .lg\:divide-none > :not([hidden]) ~ :not([hidden]) {
     border-style: none;
-  }
-
-  .lg\:p-10 {
-    padding: 2.5rem;
-  }
-
-  .lg\:p-24 {
-    padding: 6rem;
   }
 
   .lg\:px-0 {
@@ -886,19 +867,14 @@ video {
     padding-bottom: 0.5rem;
   }
 
-  .lg\:px-\[25rem\] {
-    padding-left: 25rem;
-    padding-right: 25rem;
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .lg\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-  }
-
-  .lg\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 }
 
